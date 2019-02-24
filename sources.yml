@@ -3,3 +3,8 @@ hacker-news:
   prefix: HN
   cacheforsecs: 600
   icon: hacker-news-icon.png
+tech-crunch:
+  parser: techcrunch
+  prefix: TC
+  cacheforsecs: 600
+  icon: tech-crunch-icon.png

@@ -6,14 +6,14 @@ from workflow import web
 
 def get_news():
     """
-    Parse the hacker news URL
+    Parse the tech crunch URL
     :return: {  title = news.text,
                 subtitle= news.hyperlink,
                 icon=ICON_WEB
              }
     """
 
-    url = 'https://news.ycombinator.com/'
+    url = 'https://techcrunch.com/'
 
     r = web.get(url)
 
@@ -28,7 +28,7 @@ def get_news():
     #     soup = BeautifulSoup(f.read(), 'html.parser')
 
     result = []
-    for news in soup.find_all("a", {"class": "storylink"}):
+    for news in soup.find_all("a", {"class": "post-block__title__link"}):
         result.append({
             'title': news.text.strip(),
             'subtitle': news['href'],
