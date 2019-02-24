@@ -7,7 +7,21 @@
 	<key>category</key>
 	<string>Internet</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>0C03784E-6F3D-428A-A0E5-E7E77193B6A8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3E8840BD-0E82-46F4-BB5B-3B140985840C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Santhoshkumar Settipalli</string>
 	<key>description</key>
@@ -18,6 +32,25 @@
 	<string>News</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>3E8840BD-0E82-46F4-BB5B-3B140985840C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -73,9 +106,16 @@
 		<key>0C03784E-6F3D-428A-A0E5-E7E77193B6A8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>510</integer>
+			<integer>210</integer>
 			<key>ypos</key>
-			<integer>240</integer>
+			<integer>230</integer>
+		</dict>
+		<key>3E8840BD-0E82-46F4-BB5B-3B140985840C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>230</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

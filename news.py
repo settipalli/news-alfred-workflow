@@ -21,7 +21,9 @@ def main(wf):
             wf.add_item(
                 title=n['title'],
                 subtitle='[{0}] {1}'.format(source_name, n['subtitle']),
-                icon=n['icon']
+                icon=n['icon'],
+                arg=n['subtitle'], # tell alfred to pass the url to the next action in the workflow
+                valid=True
             )
 
     # send results to Alfred as XML
