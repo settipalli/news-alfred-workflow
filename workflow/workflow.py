@@ -1662,7 +1662,7 @@ class Workflow(object):
 
         self.logger.debug('saved data: %s', data_path)
 
-    def cached_data(self, name, data_func=None, max_age=60):
+    def cached_data(self, name, data_func=None, max_age=60, data_func_args=[]):
         """Return cached data if younger than ``max_age`` seconds.
 
         Retrieve data from cache or re-generate and re-cache data if
@@ -1692,7 +1692,7 @@ class Workflow(object):
         if not data_func:
             return None
 
-        data = data_func()
+        data = data_func(*data_func_args)
         self.cache_data(name, data)
 
         return data

@@ -622,7 +622,7 @@ class Workflow3(Workflow):
 
         return super(Workflow3, self).cache_data(name, data)
 
-    def cached_data(self, name, data_func=None, max_age=60, session=False):
+    def cached_data(self, name, data_func=None, max_age=60, session=False, data_func_args=[]):
         """Cache API with session-scoped expiry.
 
         .. versionadded:: 1.25
@@ -646,7 +646,7 @@ class Workflow3(Workflow):
         if session:
             name = self._mk_session_name(name)
 
-        return super(Workflow3, self).cached_data(name, data_func, max_age)
+        return super(Workflow3, self).cached_data(name, data_func, max_age, data_func_args)
 
     def clear_session_cache(self, current=False):
         """Remove session data from the cache.
