@@ -2,6 +2,14 @@
 
 Alfred workflow that fetches news from multiple sources.
 
+# Screenshots
+
+![News - Alfred Workflow - Main Screen](screenshots/News-Alfred-Workflow.png?raw=true "News - Alfred Workflow - Main Screen")
+
+![News - Alfred Workflow - News Screen](screenshots/News-Alfred-Workflow-HN.png?raw=true "News - Alfred Workflow - News Screen")
+
+![News - Alfred Workflow - News Screen with searching enabled](screenshots/News-Alfred-Workflow-TC.png?raw=true "News - Alfred Workflow - News Screen with searching enabled")
+
 # Credits
 
 **Logo:**
