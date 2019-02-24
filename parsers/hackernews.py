@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 from bs4 import BeautifulSoup
-from workflow import ICON_WEB, web
+from workflow import web
 
 
 def get_news():
@@ -32,7 +32,7 @@ def get_news():
         result.append({
             'title': news.text,
             'subtitle': news['href'],
-            'icon': ICON_WEB
+            'link': news['href'],
         })
 
     return result

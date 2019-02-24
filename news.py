@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 import importlib
+import os
 import sys
 
 import yaml
@@ -36,12 +37,13 @@ def main(wf):
         news = wf.cached_data(source_name, get_news_from_parser, max_age=news_sources[source_name]['cacheforsecs'],
                               data_func_args=args)
 
+        prefix = "[{0}] ".format(news_sources[source_name]['prefix'].upper())
         for n in news:
             wf.add_item(
-                title=n['title'],
-                subtitle='[{0}] {1}'.format(source_name, n['subtitle']),
-                icon=n['icon'],
-                arg=n['subtitle'],  # tell alfred to pass the url to the next action in the workflow
+                title= u'{0} {1}'.format(prefix, n['title']),
+                subtitle=n['subtitle'],
+                icon=os.path.join('icons', news_sources[source_name]['icon']),
+                arg=n['link'],  # tell alfred to pass the url to the next action in the workflow
                 valid=True
             )
 

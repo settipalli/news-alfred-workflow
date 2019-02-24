@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3E8840BD-0E82-46F4-BB5B-3B140985840C</string>
+				<string>06CC120E-2CD1-4F0C-9A17-5EBE95032884</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -32,25 +32,6 @@
 	<string>News</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>3E8840BD-0E82-46F4-BB5B-3B140985840C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -98,22 +79,45 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -na "Google Chrome" --args --incognito "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>06CC120E-2CD1-4F0C-9A17-5EBE95032884</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>0C03784E-6F3D-428A-A0E5-E7E77193B6A8</key>
+		<key>06CC120E-2CD1-4F0C-9A17-5EBE95032884</key>
 		<dict>
 			<key>xpos</key>
-			<integer>210</integer>
+			<integer>700</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
-		<key>3E8840BD-0E82-46F4-BB5B-3B140985840C</key>
+		<key>0C03784E-6F3D-428A-A0E5-E7E77193B6A8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>490</integer>
+			<integer>390</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>

@@ -1,3 +1,5 @@
 hacker-news:
   parser: hackernews
+  prefix: HN
   cacheforsecs: 600
+  icon: hacker-news-icon.png
