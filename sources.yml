@@ -12,4 +12,4 @@ the-hindu:
   parser: thehindu
   prefix: The Hindu
   cacheforsecs: 600
-  icon: tech-crunch-icon.png
+  icon: newspaper-icon.png
