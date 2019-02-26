@@ -37,11 +37,11 @@ def main(wf):
         news = wf.cached_data(source_name, get_news_from_parser, max_age=news_sources[source_name]['cacheforsecs'],
                               data_func_args=args)
 
-        prefix = "[{0}] ".format(news_sources[source_name]['prefix'].upper())
+        prefix = "[{0}] ".format(news_sources[source_name]['prefix'])
         for n in news:
             wf.add_item(
-                title= u'{0} {1}'.format(prefix, n['title']),
-                subtitle=n['subtitle'],
+                title= n['title'],
+                subtitle=u'{0} {1}'.format(prefix, n['subtitle']),
                 icon=os.path.join('icons', news_sources[source_name]['icon']),
                 arg=n['link'],  # tell alfred to pass the url to the next action in the workflow
                 valid=True

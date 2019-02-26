@@ -1,10 +1,15 @@
 hacker-news:
   parser: hackernews
-  prefix: HN
+  prefix: Hacker News
   cacheforsecs: 600
   icon: hacker-news-icon.png
 tech-crunch:
   parser: techcrunch
-  prefix: TC
+  prefix: Techcrunch
+  cacheforsecs: 600
+  icon: tech-crunch-icon.png
+the-hindu:
+  parser: thehindu
+  prefix: The Hindu
   cacheforsecs: 600
   icon: tech-crunch-icon.png
