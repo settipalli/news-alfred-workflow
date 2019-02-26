@@ -19,8 +19,11 @@ def get_news_from_parser(parser):
 def main(wf):
     # get query from Alfred
     source_filter_query = None
+    news_filter_query = None
     if len(wf.args):
         source_filter_query = wf.args[0]
+        if len(wf.args) > 1:
+            news_filter_query = u' '.join(wf.args[1:])
 
     news_sources = yaml.safe_load(open("sources.yml"))
 
@@ -36,6 +39,9 @@ def main(wf):
         args = [news_sources[source_name]['parser']]
         news = wf.cached_data(source_name, get_news_from_parser, max_age=news_sources[source_name]['cacheforsecs'],
                               data_func_args=args)
+
+        if (news_filter_query):
+            news = wf.filter(news_filter_query, news, min_score=20, key=lambda news_item : u' '.join(news_item['title']))
 
         prefix = "[{0}] ".format(news_sources[source_name]['prefix'])
         for n in news:

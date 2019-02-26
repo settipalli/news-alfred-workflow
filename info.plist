@@ -58,7 +58,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching news ...</string>
 				<key>script</key>
-				<string>python news.py "{query}"</string>
+				<string>python news.py {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
