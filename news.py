@@ -41,12 +41,12 @@ def main(wf):
                               data_func_args=args)
 
         if (news_filter_query):
-            news = wf.filter(news_filter_query, news, min_score=20, key=lambda news_item : u' '.join(news_item['title']))
+            news = wf.filter(news_filter_query, news, min_score=20, key=lambda news_item: u' '.join(news_item['title']))
 
         prefix = "[{0}] ".format(news_sources[source_name]['prefix'])
         for n in news:
             wf.add_item(
-                title= n['title'],
+                title=n['title'],
                 subtitle=u'{0} {1}'.format(prefix, n['subtitle']),
                 icon=os.path.join('icons', news_sources[source_name]['icon']),
                 arg=n['link'],  # tell alfred to pass the url to the next action in the workflow
