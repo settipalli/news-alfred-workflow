@@ -3,13 +3,19 @@ hacker-news:
   prefix: Hacker News
   cacheforsecs: 600
   icon: hacker-news-icon.png
+  desc: A social news website focusing on computer science and entrepreneurship.
+  uid: Hacker
 tech-crunch:
   parser: techcrunch
   prefix: Techcrunch
   cacheforsecs: 600
   icon: tech-crunch-icon.png
+  desc: An American online publisher focussing on the tech industry.
+  uid: Techcrunch
 the-hindu:
   parser: thehindu
   prefix: The Hindu
   cacheforsecs: 600
   icon: newspaper-icon.png
+  desc: An Indian daily newspaper, started as a weekly in 1878 and became a daily in 1889.
+  uid: Hindu

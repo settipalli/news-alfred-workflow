@@ -17,15 +17,31 @@ def get_news_from_parser(parser):
 
 
 def main(wf):
+    news_sources = yaml.safe_load(open("sources.yml"))
+
+    if len(wf.args) == 0:
+        # just list the news sources
+        for source_name in news_sources.keys():
+            wf.add_item(
+                title=news_sources[source_name]['prefix'],
+                subtitle=news_sources[source_name]['desc'],
+                icon=os.path.join('icons', news_sources[source_name]['icon']),
+                valid=False,
+                autocomplete=news_sources[source_name]['uid'],
+                uid=news_sources[source_name]['uid'],
+            )
+
+        # send results to Alfred as XML
+        wf.send_feedback()
+        return
+
     # get query from Alfred
     source_filter_query = None
     news_filter_query = None
-    if len(wf.args):
-        source_filter_query = wf.args[0]
-        if len(wf.args) > 1:
-            news_filter_query = u' '.join(wf.args[1:])
 
-    news_sources = yaml.safe_load(open("sources.yml"))
+    source_filter_query = wf.args[0]
+    if len(wf.args) > 1:
+        news_filter_query = u' '.join(wf.args[1:])
 
     filtered_source_names = news_sources.keys()
 
