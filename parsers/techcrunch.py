@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from workflow import web
 
 
-def get_news():
+def get_data(*args):
     """
     Parse the tech crunch URL
     :return: {  title = news.text,
