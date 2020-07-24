@@ -19,3 +19,10 @@ the-hindu:
   icon: newspaper-icon.png
   desc: An Indian daily newspaper, started as a weekly in 1878 and became a daily in 1889.
   uid: Hindu
+ft:
+  parser: ft
+  prefix: Financial Times
+  cacheforsecs: 600
+  icon: news-icon.png
+  desc: One of the world's leading news organizations.
+  uid: FT
