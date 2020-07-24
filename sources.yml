@@ -30,6 +30,6 @@ onezero:
   parser: onezero
   prefix: One Zero - Medium
   cacheforsecs: 600
-  icon: news-icon.png
+  icon: onezero-icon.png
   desc: A Medium publication covering the forces that shape our future.
   uid: onezero
