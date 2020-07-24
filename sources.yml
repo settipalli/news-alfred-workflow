@@ -26,3 +26,10 @@ ft:
   icon: news-icon.png
   desc: One of the world's leading news organizations.
   uid: FT
+onezero:
+  parser: onezero
+  prefix: One Zero - Medium
+  cacheforsecs: 600
+  icon: news-icon.png
+  desc: A Medium publication covering the forces that shape our future.
+  uid: onezero
