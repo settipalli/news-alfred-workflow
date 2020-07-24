@@ -13,7 +13,7 @@ def get_data(*args):
              }
     """
 
-    url = 'https://www.thehindu.com./'
+    url = 'https://www.thehindu.com/'
 
     r = web.get(url)
 

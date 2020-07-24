@@ -13,7 +13,7 @@ def get_data(*args):
              }
     """
 
-    url = 'https://techcrunch.com./'
+    url = 'https://techcrunch.com/'
 
     r = web.get(url)
 

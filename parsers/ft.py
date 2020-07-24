@@ -13,7 +13,7 @@ def get_data(*args):
              }
     """
 
-    url = 'https://www.ft.com./news-feed/'
+    url = 'https://www.ft.com/news-feed/'
 
     r = web.get(url)
 
