@@ -12,7 +12,7 @@ def get_data(*args):
              }
     """
 
-    url = 'https://news.ycombinator.com/'
+    url = 'https://news.ycombinator.com./'
 
     r = web.get(url)
 
