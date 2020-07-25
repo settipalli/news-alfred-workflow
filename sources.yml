@@ -33,3 +33,10 @@ onezero:
   icon: onezero-icon.png
   desc: A Medium publication covering the forces that shape our future.
   uid: onezero
+elemental:
+  parser: elemental
+  prefix: Elemental - Medium
+  cacheforsecs: 600
+  icon: elemental-icon.png
+  desc: Health Articles and News to Live a Healthy Lifestyle.
+  uid: elemental
