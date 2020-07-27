@@ -47,3 +47,10 @@ protocol:
   icon: protocol-icon.png
   desc: Protocol produces the unbiased, fact-based news and analysis.
   uid: Protocol
+techmeme:
+  parser: techmeme
+  prefix: Techmeme
+  cacheforsecs: 600
+  icon: techmeme-icon.png
+  desc: News curation service focused on the leading edge of technology.
+  uid: Techmeme
