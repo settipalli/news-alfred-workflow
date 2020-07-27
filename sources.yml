@@ -32,18 +32,18 @@ onezero:
   cacheforsecs: 600
   icon: onezero-icon.png
   desc: A Medium publication covering the forces that shape our future.
-  uid: onezero
+  uid: Onezero
 elemental:
   parser: elemental
   prefix: Elemental - Medium
   cacheforsecs: 600
   icon: elemental-icon.png
   desc: Health Articles and News to Live a Healthy Lifestyle.
-  uid: elemental
+  uid: Elemental
 protocol:
   parser: protocol
   prefix: Protocol
   cacheforsecs: 600
   icon: protocol-icon.png
   desc: Protocol produces the unbiased, fact-based news and analysis.
-  uid: protocol
+  uid: Protocol
