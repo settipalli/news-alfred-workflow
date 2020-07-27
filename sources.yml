@@ -40,3 +40,10 @@ elemental:
   icon: elemental-icon.png
   desc: Health Articles and News to Live a Healthy Lifestyle.
   uid: elemental
+protocol:
+  parser: protocol
+  prefix: Protocol
+  cacheforsecs: 600
+  icon: protocol-icon.png
+  desc: Protocol produces the unbiased, fact-based news and analysis.
+  uid: protocol
